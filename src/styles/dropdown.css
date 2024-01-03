@@ -1,0 +1,66 @@
+@media screen and (max-width: 896px) {
+
+.mobileDropdownContainer {
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    margin-top: 45%;
+  }
+
+  .mobileDropdownContainer h4 {
+    padding: 10px 15px;
+    margin: 0;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ccc;
+    border-radius: 4px 4px 0 0;
+  }
+  
+  .mobileDropdownContent {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mobileDropdownContainer:hover .mobileDropdownContent {
+    display: block;
+  }
+  
+  .mobileDropdownContent h4 {
+    padding: 10px 15px;
+    margin: 0;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #f5f5f5;
+  }
+  
+  .mobileDropdownContent div {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .mobileDropdownContent div:last-child {
+    border-bottom: none;
+  }
+  
+  .resetbutt {
+    display: block;
+    padding: 10px 15px;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    color: violet;
+  }
+  
+  .resetbutt:hover {
+    background-color: #e5e5e5;
+  }}

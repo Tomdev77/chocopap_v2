@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300");
+
+/*desktop */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+}
+:root {
+  --primary: #b65f28;
+  --secondary: #07077c;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.titlehp {
+  font-size: 85px;
+  text-align: center;
+  position: flex;
+  justify-content: center;
+  background-color: none;
+  transition: none;
+  padding-top: 10%;
+}
+
+.hpbutt {
+  text-align: center;
+  padding: 2% 0% 10% 0%;
+  width: auto;
+}
+
+.title2hp {
+  font-size: 25px;
+  text-align: center;
+  padding: 40px 0px 40px 0px;
+  color: #000000;
+  border-radius: 4px;
+}
+
+.hpbutt:before {
+  position: flex;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  padding: 8px 15px 8px 15px;
+  background-color: var(--primary);
+  border-radius: 4px;
+  margin-top: 50px;
+  content: "Voir la boutique";
+  cursor: pointer;
+}
+
+.hpbutt:hover::after {
+  color: var(--primary);
+  content: " C'est parti!";
+  font-size: 25px;
+}
+
+#SecondTitle {
+  font-size: 50px;
+  text-align: center;
+}
+
+.carousel-item {
+  margin-top: -40%;
+  background-size: cover;
+  display: flex;
+}
+.carousel-inner {
+  margin-top: -10px;
+  display: flex;
+}
+
+#carouselh3 {
+  
+  color: var(--primary);
+  background-color: #fff;
+  display: flex;
+  width: 500px;
+  }
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+
+  background-color: rgb(9, 85, 129);
+  border-radius: 4px;
+  display:flex;
+}
+
+.services {
+  background-image: url("../images/accueil1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.products {
+  background-image: url("../images/accueil3.jpg");
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.contact-us {
+  background-image: url("../images/accueil2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.sign-up {
+  background-image: url("../images/accueil3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.consulting {
+  background-image: url("../images/accueil1.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+/*mobile 896 px viewport max largeur*/
+
+@media screen and (max-width: 896px) {
+
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+
+  .socialnetworkfooter {
+    margin-top: -5%;
+  }
+
+  .titlehp {
+    font-size: 45px;
+    padding-top: 50%;
+  }
+
+  .title2hp {
+    font-size: 20px;
+    
+  }
+
+  .hpbutt:before {
+   
+    font-size: 20px;
+  }
+  
+  .hpbutt:hover::after {
+    color: var(--primary);
+    content: " C'est parti!";
+    font-size: 15px;
+  }
+
+  .carousel-inner{
+
+  height: 300px;
+  
+  }
+
+  #carouselh3 {
+  
+    color: var(--primary);
+    background-color: #fff;
+    display: flex;
+    width: 220px;
+    border-radius: 4px;
+   
+    }
+
+    #carouselh3>p{
+
+    color: rgb(0, 0, 0);
+    background-color: #fff;
+    width: 220px;
+    border-radius: 4px;
+  }
+
+    
+}

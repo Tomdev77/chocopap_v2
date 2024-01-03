@@ -1,0 +1,41 @@
+:root {
+    --primary: #b65f28;
+    --secondary: #07077c;
+  }
+
+#contacttitle{
+
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin-bottom: 5%;
+    padding: 25px 5px 25px 5px;
+    position: sticky;
+    top: 80px;
+}
+
+.adresscontainer{
+
+    text-align: center;
+}
+
+#findUs{
+    text-align: center;
+    color: var black;
+
+}
+
+#to{
+
+    padding: 2px 2px 2px 2px;
+    color: var(--primary);
+
+}
+
+#to:hover{
+
+    padding: 2px 2px 2px 2px;
+    color: var(--secondary);
+    
+}
+
