@@ -1,13 +1,22 @@
 import React, { useState, useEffect, useContext } from "react";
 import "../styles/ficheproduit.css";
 import PanierContext from "../store/panier-context";
+import BasketItem from "../components/BasketItem"
 
 export default function PageFicheProduit() {
   const [chocolats, setChocolats] = useState([]);
   const [cart, setCart] = useState({});
   const [selectedCategories, setSelectedCategories] = useState([]);
-  const [categories, setCategories] = useState([]);
   const { addItemToCart } = useContext(PanierContext);
+  const handleReset = () => {
+    setCart({}); // Réinitialise le panier à un objet vide
+    setSelectedCategories([]); // Réinitialise les catégories sélectionnées à un tableau vide
+    addItemToCart([]);
+  };
+  const handleOpenCart = () => {
+    // Logique pour ouvrir le panier
+};
+
 
   const images = {
     image1: require('../images/produit1.jpg').default,
@@ -111,21 +120,15 @@ const handleCategoryChange = (category) => {
       <div>
 
 
+      <span className="buttaddproduct" onClick={() => addItemToCart(chocolat.id)}>
+      Ajouter au panier
+      
       <span className="buttaddproduct" onClick={() => handleAddToCart(chocolat.id)}>
-      Ajout produits ({cart[chocolat.id] || 0})
+        +1
       </span>
-
-      <span className="buttremoveproduct" onClick={() => handleRemoveFromCart(chocolat.id)}>
-      Retirer produits 
       </span>
-
-
-      <span className="buttvalidateproduct" onClick={() => addItemToCart(chocolat.id)}>
-      Valider le panier + ({cart[chocolat.id] || 0})
-      </span> 
-
-     <p id="ingred">Ingrédients :<br /> {chocolat.ingredients}</p>
-
+      <p id="ingred">Ingrédients :<br /> {chocolat.ingredients}</p>
+    
     </div>
     </div>
   ))}

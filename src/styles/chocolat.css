@@ -1,24 +1,31 @@
-.fetchdatadesktop{
+.fetchdatadesktop1{
 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-left: 15%;
+    margin-top: 115%;
+}
+
+.fetchdatadesktop{
+
+    display: none;
 }
 
 
+.mobileDropdownContainer, .filterContainer{
 
-.fetchdatamobile{
+    display: none !important;
 
-    display: none!important;
 }
+
 
 .containerForm{
 
 
-    width: 350px !important;
+    width: 450px !important;
     height: 765px;
-    margin-top: -75% !important;
+    margin-top: -175% !important;
     position: sticky!important;
     top: 105px !important;
     color: black;
@@ -43,9 +50,18 @@
 
 }
 
+
+
+.buttaddproduct{
+    width: 250px;
+    margin-bottom: 15%;
+    display: flex;
+    margin: auto;
+
+}
+
 .buttinfos{
     width: 300px;
-    margin: auto;
     background-color: black;
     text-align: center;
 
@@ -107,7 +123,7 @@ section{
     opacity: 0.5;
     color: white;
     margin-bottom: 5%;
-    margin-left: 15%;
+    margin-left: 18%;
     transition: transform 1s; /* Animation */
 
 
@@ -170,142 +186,6 @@ section img{
 
 }
 
-
-@media (min-width: 768px) and (max-width: 896px) {
-
-    .fetchdatadesktop{
-
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: -120% !important;
-
-        
-    }
-
-    .containerForm{
-
-
-       
-        margin-top: -15% !important;
-        position: sticky!important;
-        margin-bottom: 70%;
-        
-    }
-
-    .buttempty, .buttvalidate{
-
-        width: 200px;
-     
-    
-    }
-    
-    .buttinfos{
-        width: 200px;
-       
-    
-    }
-   
-
-     
-    section img{
-
-        width: 100%;
-        height: 80px;
-        border: 1px solid #cccbcb;
-    
-    
-    }
-
-    
-    section{
-
-        width: 280px;
-        margin-top: 10%;
-        margin-left: 35%;
-        border-radius: 7px;
-        margin-bottom: 5%;
-        margin-right: 15%;
-    
-
-    }
-
-
-    .titleBoutiquesection{
-        font-size: 55px;
-        text-align: center;
-        position: flex;
-        justify-content: center;
-        background-color: none;
-        transition: none !important;
-        padding-top: 30%;
-    
-    }
-
-}
-
-
-@media screen and (max-width: 767px) {
-
-  
-
-
-
-    .containerForm{
-
-
-       display: none!important;
-        
-    }
-
-    section img{
-
-        width: 100%;
-        height: 150px;
-        border: 1px solid #cccbcb;
-    
-    
-    }
-
-
-    section{
-
-        width: 360px;
-        height: 400px;
-        margin-top: 10%;
-        margin-left: 5%;
-        border-radius: 7px;
-        -webkit-transform: none !important;
-        transform: none !important;
-        -webkit-transition: none !important;
-        transition: none !important;
-        margin-bottom: 5%;
-        margin-right: 15%;
-    
-
-    }
-
-
-
-    .titleBoutiquesection{
-        font-size: 55px;
-        text-align: center;
-        position: flex;
-        justify-content: center;
-        background-color: none;
-        transition: none !important;
-        padding-top: 30%;
-    
-    }
-
-    article{
-
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-top: 5%;
-    }
-
-}
 
 
 

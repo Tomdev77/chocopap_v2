@@ -3,18 +3,21 @@ import "../styles/Navbar.css";
 import "../styles/chocolat.css";
 import PanierContext from "../store/panier-context";
 import CartModal from "../components/CartModal";
+import BasketItem from "../components/BasketItem"
 // import "../styles/Bootstrap.css";
 
 function Navbar() {
 const [showLinks, setshowLinks] = useState(false); // menu fermer par défault
 const [color, setColor] = useState(false); // changer couleur au scroll de la navbar
-
+const [cart, setCart] = useState({});
+const [chocolat, setChocolats] = useState([]);
 const handleShowLinks = () => {
     setshowLinks(!showLinks); // activation du sholinks si true sinon false
   };
+const{addItemToCart}=useContext(PanierContext);
 
-const {items}= useContext(PanierContext);
-  
+
+
 const modalRef = useRef();
 
 const handlOpenCart =()=>{
@@ -22,6 +25,7 @@ const handlOpenCart =()=>{
   modalRef.current.open();
 
 }
+
 
   // changer couleur au scroll de la navbar
 
@@ -37,6 +41,8 @@ const handlOpenCart =()=>{
   }, []);
 
 
+ 
+
   return (
     <>
     <CartModal ref={modalRef} />
@@ -49,10 +55,15 @@ const handlOpenCart =()=>{
           alt="logomobilecover"
         />
       </div>
-      <div className="basket">
-    <span onClick={handlOpenCart} class="badge text-bg-success">({items.length})</span>
-        <img id="panier" src={require("../images/panier.png")} alt="panier" />
-      </div>
+      
+      <BasketItem 
+      chocolat={chocolat} 
+      cart={cart} 
+      handlOpenCart={handlOpenCart} 
+      addItemToCart={addItemToCart} 
+      />
+
+
       <ul className="nav-links">
         <li className="navbar_item slideInDown-1">
           <a href="/" className="navbar_link">

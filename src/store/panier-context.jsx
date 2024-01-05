@@ -1,4 +1,4 @@
-import { createContext, useReducer } from "react";
+import { createContext, useReducer, useEffect, useState } from "react";
 import chocolats from "../store/data.json";
 
 export const PanierContext = createContext({
@@ -6,7 +6,9 @@ export const PanierContext = createContext({
     addItemToCart: () => {},
     updateItemsquantity : ()=>{},
     resetItems :()=>{},
+    removeItemFromCart:()=>{},
 });
+
 
 
 const cartReducer = (state, action) => {
@@ -74,12 +76,14 @@ export const PanierContextProvider = ({ children }) => {
         });
       };
 
-    const handleProductToCart = (productId) => {
+      const handleProductToCart = (productId) => {
         cartDispatch({
             type: "AJOUTER_DANS_PANIER",
-            payload: { productId, },
+            payload: { productId },
         });
     };
+
+
 
     const handleRemoveFromCart = (productId) => {
         cartDispatch({
@@ -104,9 +108,9 @@ export const PanierContextProvider = ({ children }) => {
     const initialValue = {
         items: cartState.items,
         addItemToCart: handleProductToCart,
-        removeFromCart : handleRemoveFromCart,
+        removeItemFromCart : handleRemoveFromCart,
         updateItemsquantity : handleUpdateProductQuantity,
-        resetItems: resetItems
+        resetItems: resetItems,
     };
 
     return (

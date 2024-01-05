@@ -17,6 +17,11 @@
     
 }
 
+.badgebadge-error{
+
+    color: #000;
+}
+
 #BoxChildrenImageProduct{
 
     background-color: none !important;
@@ -55,16 +60,29 @@ margin: 0 !important;
     margin-bottom: 10%;
 }
 
-.buttaddproduct, .buttremoveproduct, .buttvalidateproduct{
+.buttaddproduct{
 width: 300px;
-margin-right: 5px;
+margin:auto;
 background-color: var(--primary);
 text-align: center;
 cursor: pointer;
 padding: 5px 5px 5px 5px;;
 border-radius: 5px;
-margin-bottom: 5px !important;
+margin-bottom: 15px !important;
 
+}
+
+.resetbutt{
+
+    width: 300px;
+    background-color: var(--primary);
+    cursor: pointer;
+    padding: 5px 5px 5px 5px;;
+    border-radius: 5px;
+    margin-bottom: 15px !important;
+    
+    
+    
 }
 
 #BoxChildrenImageProduct
@@ -85,7 +103,7 @@ margin-bottom: 5px !important;
   
     }}
 
-    .buttaddproduct, .buttremoveproduct, .buttvalidateproduct{
+    .buttaddproduct{
         width: 250px;
         margin-bottom: 15%;
         display: flex;
