@@ -2,7 +2,7 @@ import "../styles/dropdown.css";
 import PanierContext from "../store/panier-context";
 import React, { useState, useEffect,useContext } from "react";
 
-// Composant Filtermobile => DEUXIEME PAGE PRODUITS
+// Composant Filtermobile => DEUXIEME PAGE PRODUITS mobile
 
 
 
