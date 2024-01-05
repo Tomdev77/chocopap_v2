@@ -4,7 +4,7 @@ import "../styles/contact.css";
 import Productcarousel from "../components/Productcarousel";
 import GoogleMap from "../components/GoogleMap";
 
-// import { Panier } from "../components/Button";
+// PREMIERE PAGE PRESENTATION HP
 
 export default function Homepage() {
 return (

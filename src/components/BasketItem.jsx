@@ -2,6 +2,8 @@
 import React from 'react';
 import Badge from 'react-bootstrap/Badge';
 
+// Composant BasketItem enfant de Navbar => PREMIERE PAGE PRESENTATION HP, DEUXIEME PAGE PRODUITS,TROISIEME PAGE => fiche produits
+
 
 function BasketItem({ chocolat, cart, handlOpenCart, addItemToCart }) {
 const itemCount = cart[chocolat.id] || 0;

@@ -1,5 +1,8 @@
 import React from 'react';
 
+// Composant Google Map => PREMIERE PAGE PRESENTATION HP
+
+
 export default function GoogleMap() {
 return (
 <iframe 

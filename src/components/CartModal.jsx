@@ -3,11 +3,10 @@ import { createPortal } from "react-dom";
 import "../styles/CartModal.css";
 import Cart from "../components/cart";
 
+// Composant CartModal => affichage de la pop up Cart modal =>  DEUXIEME PAGE PRODUITS,TROISIEME PAGE => fiche produits
+
 
 const CartModal = forwardRef(function Modal({}, ref) {
-
-
-
 
 const dialog=useRef();
 

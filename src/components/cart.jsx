@@ -2,6 +2,10 @@ import { useContext } from "react";
 import PanierContext from "../store/panier-context";
 import "../styles/CartModal.css";
 
+
+// Composant Cart => affichage  du contenu à l'intérieur de la pop up Cart modal =>  DEUXIEME PAGE PRODUITS,TROISIEME PAGE => fiche produits
+
+
 const Cart = ()=>{
 
 

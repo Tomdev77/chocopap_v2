@@ -3,6 +3,9 @@ import "../styles/ficheproduit.css";
 import PanierContext from "../store/panier-context";
 import BasketItem from "../components/BasketItem"
 
+
+// TROISIEME PAGE => fiche produits
+
 export default function PageFicheProduit() {
 const [chocolats, setChocolats] = useState([]);
 const [cart, setCart] = useState({});

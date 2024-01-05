@@ -6,6 +6,9 @@ import CartModal from "../components/CartModal";
 import BasketItem from "../components/BasketItem"
 // import "../styles/Bootstrap.css";
 
+// Composant Navbar => PREMIERE PAGE PRESENTATION HP, DEUXIEME PAGE PRODUITS,TROISIEME PAGE => fiche produits
+
+
 function Navbar() {
 const [showLinks, setshowLinks] = useState(false); // menu fermer par défault
 const [color, setColor] = useState(false); // changer couleur au scroll de la navbar

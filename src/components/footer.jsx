@@ -1,6 +1,9 @@
 import React from "react";
 import "../styles/footer.css";
 
+// Composant Footer => PREMIERE PAGE PRESENTATION HP, DEUXIEME PAGE PRODUITS,TROISIEME PAGE => fiche produits
+
+
 export default function Footer() {
 return (
 <>
