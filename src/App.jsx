@@ -10,21 +10,21 @@ import Navbar from "./components/Navbar";
 function App() {
 
 
-  return (
-    <Router>
-      <PanierContextProvider> {/* Wrap your application with PanierContextProvider */}
-        <div className="App">
-          <Navbar/>
-          <Switch>
-            <Route path="/" exact component={Homepage} />
-            <Route path="/boutique" component={BoutiqueSection} />
-            <Route path="/ficheproduit" component={PageFicheProduit} />
-          </Switch>
-          <Footer />
-        </div>
-      </PanierContextProvider>
-    </Router>
-  );
+return (
+<Router>
+<PanierContextProvider> {/* Wrap your application with PanierContextProvider */}
+<div className="App">
+<Navbar/>
+<Switch>
+<Route path="/" exact component={Homepage} />
+<Route path="/boutique" component={BoutiqueSection} />
+<Route path="/ficheproduit" component={PageFicheProduit} />
+</Switch>
+<Footer />
+</div>
+</PanierContextProvider>
+</Router>
+);
 }
 
 export default App;

@@ -7,34 +7,34 @@ import Cart from "../components/cart";
 const CartModal = forwardRef(function Modal({}, ref) {
 
 
-    
+
 
 const dialog=useRef();
 
 useImperativeHandle(ref,()=>{
-    return{
+return{
 
-    open:()=>{
+open:()=>{
 
-        dialog.current.showModal();
-    }
-    };
+dialog.current.showModal();
+}
+};
 });
 
 const handleClose = () => {
-    dialog.current.close();
+dialog.current.close();
 };
 return createPortal(
 
-    <dialog id="modal" ref={dialog}>
+<dialog id="modal" ref={dialog}>
 
-        <h2 id="paniercart">Panier</h2>
-        <Cart />
-        <form method="dialog" >
-        <button className="buttclosemodal" onClick={handleClose}><img id ="shop" src={require(`../images/croix.png`)} width="50"alt="imgjson" /></button>
-        </form>
+<h2 id="paniercart">Panier</h2>
+<Cart />
+<form method="dialog" >
+<button className="buttclosemodal" onClick={handleClose}><img id ="shop" src={require(`../images/croix.png`)} width="50"alt="imgjson" /></button>
+</form>
 
-    </dialog>, document.getElementById('modal-root')
+</dialog>, document.getElementById('modal-root')
 
 )
 

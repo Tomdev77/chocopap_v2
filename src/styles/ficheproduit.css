@@ -1,30 +1,30 @@
 .containerficheproduct{
 
-    display: flex;
-    flex-wrap: wrap;
-    margin:auto;
-    width: 45%;
-    font-size: 15px;
-    flex-direction: row;
+display: flex;
+flex-wrap: wrap;
+margin:auto;
+width: 45%;
+font-size: 15px;
+flex-direction: row;
 
 }
 
 
 .containerParentficheproduct{
 
-    margin-bottom: 10%;
-    padding-right: 15%;
-    
+margin-bottom: 10%;
+padding-right: 15%;
+
 }
 
 .badgebadge-error{
 
-    color: #000;
+color: #000;
 }
 
 #BoxChildrenImageProduct{
 
-    background-color: none !important;
+background-color: none !important;
 }
 
 
@@ -42,22 +42,19 @@ width: 200px;
 height:180px;
 margin: 0 !important;
 
-
-
-
 }
 
 
 .titleficheproduit{
 
-    font-size: 85px;
-    text-align: center;
-    position: flex;
-    justify-content: center;
-    background-color: none;
-    transition: none;
-    margin-top: 15%;
-    margin-bottom: 10%;
+font-size: 85px;
+text-align: center;
+position: flex;
+justify-content: center;
+background-color: none;
+transition: none;
+margin-top: 15%;
+margin-bottom: 10%;
 }
 
 .buttaddproduct{
@@ -74,61 +71,61 @@ margin-bottom: 15px !important;
 
 .resetbutt{
 
-    width: 300px;
-    background-color: var(--primary);
-    cursor: pointer;
-    padding: 5px 5px 5px 5px;;
-    border-radius: 5px;
-    margin-bottom: 15px !important;
-    
-    
-    
+width: 300px;
+background-color: var(--primary);
+cursor: pointer;
+padding: 5px 5px 5px 5px;;
+border-radius: 5px;
+margin-bottom: 15px !important;
+
+
+
 }
 
 #BoxChildrenImageProduct
 {
 
-    background-color: rgb(16, 17, 17);
+background-color: rgb(16, 17, 17);
 
 }
 
 @media screen and (max-width: 896px) {
 
-    .titleficheproduit{
+.titleficheproduit{
 
-        font-size: 45px;
-        margin-top: 50%;
-        margin-bottom: 10%;
- 
-  
-    }}
-
-    .buttaddproduct{
-        width: 250px;
-        margin-bottom: 15%;
-        display: flex;
-      
-        
-        }
-
-        .containerParentficheproduct{
-
-            display: flex;
-            flex-wrap: wrap-reverse;
-            flex-direction: column;
-            width: auto;
-        }
+font-size: 45px;
+margin-top: 50%;
+margin-bottom: 10%;
 
 
-       
+}}
+
+.buttaddproduct{
+width: 250px;
+margin-bottom: 15%;
+display: flex;
+
+
+}
+
+.containerParentficheproduct{
+
+display: flex;
+flex-wrap: wrap-reverse;
+flex-direction: column;
+width: auto;
+}
+
+
+
 #imgficheproduct{
 
-  
-    
-    margin: auto !important;
 
-    }
-    
-            
+
+margin: auto !important;
+
+}
+
+
 
         

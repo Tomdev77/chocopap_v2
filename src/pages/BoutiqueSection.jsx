@@ -7,13 +7,12 @@ import  Dropdown  from "../components/Dropdown";
 // import { Panier } from "../components/Button";
 
 export default function BoutiqueSection() {
-    return (
-     <>
-          <h1 className="titleBoutiquesection">BOUTIQUE</h1>
-          <Dropdown />
-           <Chocolat />
-           
-      </>
-    );
-  }
-  
+return (
+<>
+<h1 className="titleBoutiquesection">BOUTIQUE</h1>
+<Dropdown />
+<Chocolat />
+    
+</>
+);
+}
